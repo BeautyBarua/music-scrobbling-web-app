@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Add Listener</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1 class="title">Add Listener</h1>
+    <nav><a href="./stats.html">Back to stats</a></nav>
+  </header>
+
+  <main>
+    <form id="addForm" novalidate>
+      <div class="field">
+        <label for="firstName">First name </label>
+        <input id="firstName" name="firstName" type="text" aria-required="true" autocomplete="given-name" />
+      </div>
+
+      <div class="field">
+        <label for="lastName">Last name </label>
+        <input id="lastName" name="lastName" type="text" aria-required="true" autocomplete="family-name" />
+      </div>
+
+      <div class="field">
+        <label for="username">Username </label>
+        <input id="username" name="username" type="text" aria-required="true" autocomplete="username" pattern="^\S+$" />
+        <small>Avatar will be generated as
+          <code>https://robohash.org/&lt;username&gt;.png?size=60x60&amp;set=set5</code>.
+        </small>
+      </div>
+
+      <div id="errors" class="error" role="alert" aria-live="assertive" hidden></div>
+
+      <button type="submit">Add listener</button>
+    </form>
+  </main>
+
+  <script type="module" src="./scripts/addListener.js"></script>
+</body>
+</html>

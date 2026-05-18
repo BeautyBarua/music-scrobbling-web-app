@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Add Scrobble</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="header">
+    <h1 class="title">Add Scrobble</h1>
+    <nav>
+      <a href="./stats.html">Back to stats</a>
+      <span> | </span>
+      <a href="./add.html">Add Listener</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="scrobbleForm" novalidate>
+      <div class="field">
+        <label for="listenerSelect">Listener <span aria-hidden="true"></span></label>
+        <select id="listenerSelect" name="listener" autocomplete="off">
+          <option value="" disabled selected>Select a listener</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="albumSelect">Album <span aria-hidden="true"></span></label>
+        <select id="albumSelect" name="album" autocomplete="off">
+          <option value="" disabled selected>Select an album</option>
+        </select>
+        <small>Tracks are filtered by the selected album.</small>
+      </div>
+
+      <div class="field">
+        <label for="trackSelect">Track <span aria-hidden="true"></span></label>
+        <select id="trackSelect" name="track" autocomplete="off" disabled>
+          <option value="" disabled selected>Select a track</option>
+        </select>
+      </div>
+
+      <div class="field">
+        <label for="dateInput">Date</label>
+        <input id="dateInput" name="date" type="date" />
+        <small>Defaults to today if left empty.</small>
+      </div>
+
+      <div id="errors" class="error" hidden></div>
+
+      <button type="submit">Add scrobble</button>
+    </form>
+  </main>
+
+  <script type="module" src="./scripts/scrobble.js"></script>
+</body>
+</html>

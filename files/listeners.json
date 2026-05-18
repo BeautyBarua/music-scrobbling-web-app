@@ -1,0 +1,46 @@
+[
+    {
+        "id": 1,
+        "first_name": "Iliman",
+        "last_name": "Ndiaye",
+        "username": "skiliman10",
+        "enrolled": "2020/05/20",
+        "avatar": "https://robohash.org/skiliman10.png?size=60x60&set=set5",
+        "scrobbles": [
+            {
+                "track_id": "7FOgcfdz9Nx5V9lCNXdBYv",
+                "date": "2020/07/09"
+            },
+            {
+                "track_id": "09Rv6ctDE0t9z8zk5FINg8",
+                "date": "2020/02/11"
+            },
+            {
+                "track_id": "2f6UtOGwSA1CMuWZi59r8Z",
+                "date": "2019/10/14"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "first_name": "Taz",
+        "last_name": "Scott-Talib",
+        "username": "piquemonger",
+        "enrolled": "2025/09/19",
+        "avatar": "https://robohash.org/piquemonger.png?size=60x60&set=set5",
+        "scrobbles": [
+            {
+                "track_id": "79gWc6dZ1dXH7rC67DTunz",
+                "date": "2020/03/29"
+            },
+            {
+                "track_id": "5c9tBmJKbTdn1vhzXHeAwW",
+                "date": "2020/09/07"
+            },
+            {
+                "track_id": "4ROYC4vHfPZ28mqz0eLrzL",
+                "date": "2018/11/04"
+            }
+        ]
+    }
+]
